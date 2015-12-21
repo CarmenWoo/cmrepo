@@ -1,2 +1,0 @@
-# cmrepo
-My first repository
