@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" media="screen" href="style/table.css">
+<title>Cities</title>
+
+</head>
+<body>
+    <table>
+        <caption>Itinerary</caption>
+        <thead>
+        <tr>
+            <th>When</th>
+            <th>Where</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>June 9th</td>
+        <td>Portland,<abbr title="Oregon">OR</abbr></td>
+        </tr>
+        <tr>
+        <td>June 10th</td>
+        <td>Seattle,<abbr title="Washington">WA</abbr></td>
+        </tr>
+        <tr>
+        <td>June 12th</td>
+        <td>Saramento,<abbr title="Canifornia">CA</abbr></td>
+        </tr>
+        </tbody>
+    </table>
+    <script src = "scripts/addLoadEvent.js"></script>
+    <script src = "scripts/stripeTables.js"></script>
+    <script src = "scripts/displayAbbreviation.js"></script>
+</body>
+</html>
