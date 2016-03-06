@@ -4,27 +4,32 @@ a:hover{text-decoration:underline; color: #cc99ff;}
 h2{line-height:28px; border-bottom:1px solid #cce6f5; margin-bottom:10px;}
 h2 span{float:right;}
 h2 span a{font-size:12px; font-weight:normal;}
+body{background:#F0F0F0;}
 
-#wrap{width:1000px; margin:0 auto;}
+#wrap{width:1000px; margin:0 auto; border:2px solid #D8D8D8; background:#FFFFFF;}
 #header,#mainbody{width: 100%; overflow:hidden; margin-bottom:10px;}
 
 
-.logo{width: 100%; overflow: hidden; margin-top: 5px; background:#f8f8f8;}
-.logo h1{float:left; background: url(../images/logo.gif) no-repeat;width:350px; height:120px; text-indent: -9999px; cursor: pointer;}
+.logo{width: 100%; overflow: hidden; background:#383838;}
+.logo h1{float:left; background: url(../images/logo.gif) no-repeat;width:350px; 
+	height:120px; text-indent: -9999px; cursor: pointer;}
 .logo dl{float:right; margin-top: 10px;}
-.logo dt{font-weight: bold; color:#5a5a5a; line-height:26px;}
-.logo dd{font-size: 12px; color:#828282; line-height: 24px;}
+.logo dt{font-weight: bold; color:#FF9966; line-height:26px;}
+.logo dd{font-size: 12px; color:#FFFFFF; line-height: 24px;}
 
-#nav{width:100%; margin-top:8px; height:30px; overflow:hidden; list-style:none;
-	margin-top:20px; padding-left:50px; border-bottom:12px solid #000000; }
-#nav ul{width:94%; margin:0 auto; overflow:hidden;}
-#nav li{float:left; line-height:34px; font-weight:bold; margin:0; font-size:16px;}
-#nav li a{display:block; height:40px; text-align:center; line-height:30px; width:120px; 
-	background:url(../images/btnBg.png); margin-left:1px;}
-#nav li a:hover{text-decoration:none;}
+#nav{width:100%; height:30px; list-style:none; border-bottom:12px solid #202020; background:#202020; padding-left: 25px;}
+#nav li{float:left; line-height:34px; font-weight:bold; font-size:18px; }
+#nav li a{display:block; height:40px; text-align:center; line-height:38px; width:100px; margin-left:1px; color:#99FFFF;}
+#nav li a:hover, #nav li a{text-decoration:none;}
 #nav li.current{text-align:center;}
 #nav li.current a{color:#000000;}
-#nav li a.on, #nav li a:hover{background-position: 0 -30px; color:#FFFFFF;}
+#nav li a.on, #nav li a:hover{color:#FFFFFF;}
+
+#search{float:right; margin-right:80px; margin-top:3px; height:28px;}
+#searched_content{width:200px;}
+#searchform{width:26px; color:#101010; text-align:center; font-weight:bold;}
+
+
 
 #flolef{float:left; }
 #pic {position:relative; width:600px; height:320px; border:1px solid #666; overflow:hidden;}
@@ -40,9 +45,10 @@ h2 span a{font-size:12px; font-weight:normal;}
 #pic ul li.on {background:#900}
 #pic_list a{position:absolute;}
 
-.box{width:370px; overflow:hidden; margin-bottom: 15px;float:left;}
+
 .sidebar{float:right; width:370px;}
 .sidebar li a{font-size:12px;}
+.box{width:370px; overflow:hidden; margin-bottom: 15px;float:left;}
 .newslist{width:100%;}
 .newslist li{line-height:22px;}
 

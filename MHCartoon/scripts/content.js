@@ -7,7 +7,7 @@
 		$("#pic_info").html($("#pic_list a:first-child").find("img").attr('alt'));
 		$("#pic_info").click(function(){window.open($("#pic_list a:first-child").attr('href'), "_blank")});
 		$("#pic li").click(function() {
-			var i = $(this).text() - 1;//»ñÈ¡LiÔªËØÄÚµÄÖµ£¬¼´1£¬2£¬3£¬4
+			var i = $(this).text() - 1;
 			n = i;
 			if (i >= count) return;
 			$("#pic_info").html($("#pic_list a").eq(i).find("img").attr('alt'));
@@ -26,3 +26,4 @@
 		n = n >=(count - 1) ? 0 : ++n;
 		$("#pic li").eq(n).trigger('click');
 	}
+

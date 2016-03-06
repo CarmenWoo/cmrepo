@@ -5,7 +5,7 @@
 	<title>Welcome to MJ</title>
 	<link rel="stylesheet" href="styles/mij.css" media="screen"  type="text/css"/>
   <script type="text/javascript" src="jquery-1.2.6.pack.js"></script>
-    
+  <script src="jquery-1.6.2.min.js" type="text/javascript"></script> 
 </head>
 
 <body>
@@ -26,6 +26,15 @@
 				<li><a href ="#">漫画</a></li>
 				<li><a href ="#">互动区</a></li>
 			</ul>
+      <table id = "search">
+      <tr>
+      <form method="get" id="searchform" action="http://cn.bing.com/search">
+        <td><input type="text" id="searched_content" title="在此输入搜索内容。"></td>
+        <td><input type="submit" value="Go" class="button" title="搜索！"></td>
+      </tr>
+      </form>>
+      </table>
+
 		</div>
 	</div>
 
