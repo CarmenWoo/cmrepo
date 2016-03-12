@@ -1,150 +1,190 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
-
+<!DOCTYPE html>
+<html>
 <head>
-	<meta charset="UTF-8">
+	<meta http-equiv="Content-type" content="text/html"; charset="UTF-8">
 	<title>Welcome to MJ</title>
 	<link rel="stylesheet" href="styles/mij.css" media="screen"  type="text/css"/>
-  <script type="text/javascript" src="jquery-1.2.6.pack.js"></script>
-  <script src="jquery-1.6.2.min.js" type="text/javascript"></script> 
+	<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-<div id = "wrap">
-	<div id = "header">
-		<div class="logo">
-			<h1><a href="#">动画之城</a></h1>
-			<dl>
-			<dt>动画之城。</dt>
-			<dd>那些年，我们追过的小胖子们~</dd>
-			</dl>
-		</div>
-		<div id="nav">
-			<ul>
-				<li class="current"><a href ="#" class="on">首页</a></li>
-				<li><a href ="#">电影</a></li>
-				<li><a href ="#">电视剧</a></li>
-				<li><a href ="#">漫画</a></li>
-				<li><a href ="#">互动区</a></li>
-			</ul>
-      <table id = "search">
-      <tr>
-      <form method="get" id="searchform" action="http://cn.bing.com/search">
-        <td><input type="text" id="searched_content" title="在此输入搜索内容。"></td>
-        <td><input type="submit" value="Go" class="button" title="搜索！"></td>
-      </tr>
-      </form>>
-      </table>
+	<div id = "wrap">
+		<div id = "header">
+			<div class="logo">
+				<h1><a href="#">动画之城</a></h1>
+				<dl>
+					<dt>动画之城。</dt>
+					<dd>那些年，我们追过的小胖子们~</dd>
+				</dl>
+			</div>
 
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+      			<a class="navbar-brand" href="#">动画之城</a>
+   				</div>
+   				<div>
+					<ul class="nav navbar-nav">
+						<li class="active"><a href ="#">首页</a></li>
+						<li><a href ="#">电视剧</a></li>
+						<li><a href ="#">漫画</a></li>
+						<li><a href ="#">互动区</a></li>
+						<li class="dropdown">
+							<a href ="#" class="dropdown-toggle" data-toggle="dropdown">电影<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">国内</a></li>
+								<li><a href="#">欧美</a></li>
+								<li class="divider"></li>
+								<li><a href="#">日本</a></li>
+								<li class="divider"></li>
+								<li><a href="#">韩国</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
+		<div id = "mainbody">
+			<div class="content">
+				<div id = "flolef">
+					<div id ="pic">
+						<div id ="pic_bg"></div>
+						<div id ="pic_info"></div>
+						<ul>
+							<li class="on">1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+						</ul>
+						<div id = "pic_list">
+							<a href="#" target="_blank"><img src="images/p1.jpg" title="经典动漫" alt="经典动漫" /></a>
+							<a href="#" target="_blank"><img src="images/p2.jpg" title="经典动漫" alt="经典动漫" /></a>
+							<a href="#" target="_blank"><img src="images/p3.jpg" title="经典动漫" alt="经典动漫" /></a>
+							<a href="#" target="_blank"><img src="images/p4.jpg" title="经典动漫" alt="经典动漫" /></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="sidebar">
+					<table id = "search">
+					<tr>
+						<form method="get" id="searchform" action="http://cn.bing.com/search">
+							<td><input type="text" id="searched_content" title="在此输入搜索内容。"></td>
+							<td><input type="submit" value="Go" class="button" title="搜索！"></td>
+						</tr>
+					</form>
+					</table>
+					<br/><br/>
+					<div class="video">
+					<video width="300px" controls>
+  						<source src="videos/mov_bbb.mp4" type="video/mp4">
+  						<source src="videos/mov_bbb.ogg" type="video/ogg">
+  					Your browser does not support HTML5 video.
+  					</video>
+					</div>
+
+					<div class="box">
+						<h2><a href="#" target="_blank">宫崎骏</a></h2>
+						<table id="basicInfo">
+							<tr class="Info"><td class="Info1">基本资料</td><td>宫崎骏</td>
+							</tr>
+							<tr class="alt"><td class="Info1">英文名：</td><td>Miyazaki Hayao</td></tr>
+							<tr><td class="Info1">代表作品:</td><td><a>《千与千寻》</a><a>《龙猫》</a><a>《天空之城》</a></td></tr>
+							<tr class="alt"><td class="Info1">国籍：</td><td>日本</td></tr>
+							<tr><td class="Info1">职业：</td><td>动画导演，编剧作家</td></tr>
+							<tr class="alt"><td class="Info1">性别：</td><td>男</td></tr>
+							<tr><td class="Info1">出生地：</td><td>京东</td></tr>
+							<tr class="alt"><td class="Info1">出生日期；</td><td>1941年1月5日</td></tr>
+						</table>
+					</div>
+					<div class="box">
+						<h2><a href="#">相关信息</a></h2>
+							<table id="relinfo">
+								<tr class="rel">
+									<td><img src="images/r1.jpg"/></td><td><a>千与千寻</a></td>
+								</tr>
+								<tr>
+									<td><img src="images/r2.jpg"/></td><td><a>幽灵公主</a></td>
+								</tr>
+								<tr>
+									<td><img src="images/r3.jpg"/></td><td><a>黑泽明</a></td>
+								</tr>
+								<tr>
+									<td><img src="images/r4.jpg"/></td><td><a>借东西的小人阿莉埃蒂</a></td>
+								</tr>
+								<tr>
+									<td><img src="images/r5.jpg"/></td><td><a>久石让</a></td>
+								</tr>
+							</table>
+					</div>
+					<div class="box">
+					<h3>叽里呱啦</h3>
+						<div class="fri_link"><a href="#">小组管理</a></div>
+					</div>
+				</div>
+			</div>
+
+			<div class ="contentbox">
+				<div><br/><br/>
+					<h3>推荐列表</h3>
+					<div class="img">
+ 						<a target="_blank" href="#"><img src="images/c1.jpg" alt="萤火虫之墓 " width="110" height="90"></a>
+ 					<div class="desc">《萤火虫之墓 》</div>
+					</div>
+					<div class="img">
+ 						<a target="_blank" href="#"><img src="images/c2.jpg" alt="魔女宅急便" width="110" height="90"></a>
+					<div class="desc">《魔女宅急便》</div>
+					</div>
+					<div class="img">
+						 <a target="_blank" href="#"><img src="images/c3.jpg" alt="天空之城" width="110" height="90"></a>
+					 <div class="desc">《天空之城》</div>
+					</div>
+					<div class="img">
+						 <a target="_blank" href="#"><img src="images/c4.jpg" alt="千与千寻" width="110" height="90"></a>
+ 					<div class="desc">《千与千寻》</div>
+					</div>
+					<div class="img">
+ 						<a target="_blank" href="#"><img src="images/c5.jpg" alt="百变狸猫" width="110" height="90"></a>
+ 					<div class="desc">《百变狸猫》</div>
+					</div>
+					<div class="img">
+ 						<a target="_blank" href="#"><img src="images/c6.jpg" alt="种下星星的日子" width="110" height="90"></a>
+ 					<div class="desc">《种下星星的日子》</div>
+					</div>
+					<div class="page">
+						<ul class="pagination pagination-sm">
+  							<li><a href="#">&laquo;</a></li>
+  							<li class="active"><a href="#">1</a></li>
+  							<li class="disabled"><a href="#">2</a></li>
+  							<li><a href="#">3</a></li>
+  							<li><a href="#">4</a></li>
+  							<li><a href="#">5</a></li>
+  							<li><a href="#">&raquo;</a></li>
+						</ul>
+					</div>
+				</div>
+				
+
+				<div id="demo">
+					<h2><b>宫崎骏热点</b></h2>
+							<h3>经典重现久石让•宫崎骏动漫作品交响音乐会 武汉上演</h3>
+								<p>本次音乐会诚邀交响乐团小提琴、中提琴、大提琴、等各弦乐部首席演奏家及知名钢琴演奏家倾力演出，乐团编制也达到了标准的交响乐版，绝非缩水的弦乐版或者重奏版。大气磅礴演绎经典，完美再现大师的不朽名作。届时乐团不仅将演奏<a class="tooltip" id="tooltip1">《千与千寻》</a><a class="tooltip" id="tooltip2">《天空之城》</a><a class="tooltip" id="tooltip3">《龙猫》</a><a class="tooltip" id="tooltip4">《幽灵公主》</a><a class="tooltip" id="tooltip5">《悬崖上的金鱼姬》</a><a class="tooltip" id="tooltip6">《魔女宅急便》</a><a class="tooltip" id="tooltip7">《风之谷》</a>等经典动画作品。还将演奏久石让的电影交响作品<a class="tooltip" id="tooltip8">《菊次郎的夏天》</a><a class="tooltip" id="tooltip9">《入殓师》</a>等。本场音乐会还特别编辑了宫崎骏动画作品与久石让的音乐完美契合，精彩的电影画面让你重温一个个温暖人心的故事，震撼心灵的优美音乐把你的思绪带入一个浪漫且充满梦幻色彩的世界。</p>
+								<p>久石让，中国年轻一代的动漫迷们都不陌生。久石让的音乐，有一种能勾起心底最纯真的力量，被人们称为触动灵魂的乐者。久石让与宫崎骏的黄金组合创作的《天空之城》、《千与千寻》、《龙猫》、《哈尔的移动城堡》、《幽灵公主》等经典作品深受广大青年朋友的喜爱。天空之城、千与千寻中的经典配乐更是常常作为背景音乐在众多场合中被引用。此外久石让更在电影配乐领域与多位著名导演合作，创作了《那年夏天，宁静的海》、《坏孩子的天空》、、《菊次郎的夏天》、 《入殓师》、《太阳照常升起》等电影配乐佳作</p>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<ul>
+				<li>Copyright © 2016 C.M.W. All Rights Reserved.</li>
+				<li>卡门 版权所有</li>
+			</ul>
 		</div>
 	</div>
-
-	<div id = "mainbody">
-	<div class="content">
-     <div id = "flolef">
-		<div id ="pic">
-		<div id ="pic_bg"></div>
-		<div id ="pic_info"></div>
-			<ul>
-				<li class="on">1</li>
-				<li>2</li>
-				<li>3</li>
-        <li>4</li>
-			</ul>
-		<div id = "pic_list">
-			<a href="#" target="_blank"><img src="images/p1.jpg" title="经典动漫" alt="经典动漫" /></a>
-			<a href="#" target="_blank"><img src="images/p2.jpg" title="经典动漫" alt="经典动漫" /></a>
-      <a href="#" target="_blank"><img src="images/p3.jpg" title="经典动漫" alt="经典动漫" /></a>
-			<a href="#" target="_blank"><img src="images/p4.jpg" title="经典动漫" alt="经典动漫" /></a>
-		</div>
-		</div>
-		</div>
-		<!-- <img src = "images/mi.jpg" width = "600" height = "300" class = "margin_btm_15" /> -->
-      <div class="sidebar">
-      <div class="box">
-        <h2>最新动态</h2>
-        <ul class="newslist">
-          <li><a href="#">细数火影忍者的精彩打戏——火影忍者作画回介绍</a></li>
-          <li><a href="#">东京小众自由行必做十四事之No.1 寻找一部动画/插画集的印迹</a></li>
-          <li><a href="#">走进美好而梦幻的吉卜力</a></li>
-          <li><a href="#">2015 年全球暑期档有哪些值得期待的动画电影？</a></li>
-          <li><a href="#">宫崎骏40年手稿欣赏</a></li>
-        </ul>
-      </div>
-         <div class="box">
-        <h2><a href="#">更多推荐</a> <span><a href="#">更多>></a></span></h2>
-        <ul class="downlist">
-          <li class="soft_r_1"><a href="#">狮子王</a><span><a href="#" class="download">下载</a></span></li>
-          <li class="soft_r_2"><a href="#">你看起来好像很好吃</a><span><a href="#" class="download">下载</a></span></li>
-          <li class="soft_r_3"><a href="#">动物总动员</a><span><a href="#" class="download">下载</a></span></li>
-          <li class="soft_r_4"><a href="#">飞屋环游记</a><span><a href="#" class="download">下载</a></span></li>
-          <li class="soft_r_5"><a href="#">马达加斯加</a><span><a href="#" class="download">下载</a></span></li>
-          <li class="soft_r_6"><a href="#">了不起的狐狸爸爸</a><span><a href="#" class="download">下载</a></span></li>
-        </ul>
-      </div>
-
-      <div class="box">
-        <h2>叽里呱啦</h2>
-        <div class="fri_link"><a href="#">小组管理</a></div>
-      </div>
-      </div>
-    </div>
-
-    <div class ="contentbox">
-    <br/><br/><br/>
-    <h2>推荐列表</h2>
-    <div class = "cartoonlist">
-    <ul class="list">
-      <li class="list1">
-        <a href="#" target="_blank"><img src="images/c1.jpg" title="萤火虫之墓 " alt="萤火虫之墓 " /></a>
-        <p><br/><b>《萤火虫之墓 》</b>美日战争爆发，14岁的清太带着年幼的妹妹到处逃命，当他们到达防空洞的时候，母亲已身受重伤，没过多久便不久人世。两兄妹自此过着相依为命的日子。他们只好投靠了母亲的姐妹，纵使他们把家里所有的家当都送给了阿姨，但当食物吃完，他们就越感到了寄人篱下的感觉，清太决定带着妹妹离开独自生活。火灾硝烟中的生活并不好过，清太为了妹妹四处偷取食物，但妹妹还是严重营养不良……</p><br/>
-      </li>
-      <br/>
-      <li class="list2">
-        <a href="#" target="_blank"><img src="images/c2.jpg" title="魔女宅急便" alt="魔女宅急便" /></a>
-        <p><br/><b>《魔女宅急便》</b>琪琪今年13岁了，按照魔法界的规矩，魔法少女年满13岁就要出外进行为期一年的修行。所以琪琪带着宠物黑猫吉吉踏上了修行之旅。然而，修行之旅开识得并不顺利，当琪琪来到海边一座大城市时，人们并没有欢迎她的到来，人人都不搭理她。幸亏琪琪有一颗善良的心，当她拾到了一件别人的失物时，热心的琪琪找到了失主。她的善良赢得了面包店老板娘的好感，琪琪就在面包店开始了她用飞行魔法为客人服务的快递业务。琪琪很快适应了新环境，一次，一个热衷于飞机制造的男孩邀请琪琪去参加飞行俱乐部的聚会，途中琪琪因为帮一位老大娘送东西而被雨淋了。从此，琪琪突然发现自己的魔法正在一天天变弱。</p><br/>
-      </li>
-      <br/>
-      <li class="list3">
-        <a href="#" target="_blank"><img src="images/c3.jpg" title="天空之城" alt="天空之城" /></a>
-        <p><br/><b>《天空之城》</b>古老帝国拉比达是一座漂浮在空中的巨大的机器岛，传说那里已经无人居住，蕴藏着巨大的财富。因此，无论军方还是海盗，都在找寻着这座传说中的飞行岛。 
-　　矿工帕克这天偶遇拉达比继承人希达，两人一见如故。因为希达身上有找寻拉比达帝国的重要物件飞行石，军方和海盗两帮人马都在追杀希达。帕克带着希达一起逃亡，最终都没有逃出军方的手中，希达被军队掳走了。 
-　　为救朋友，帕克只能选择与海盗合作。帕克与海盗成功救出了希达，同时，他们也发现了军方的邪恶计划。为了阻止军方邪恶计划的实施，他们和海盗一起踏上了寻找拉比达之旅。</p><br/>
-      </li>
-      <p><a href="#">更多推荐 >></a></p>
-    </ul>
-      
-<ul class="items">
-      <li class="item1">
-        
-      </li>
-      <br/>
-      <li class="item2">
-        
-      </li>
-      <br/>
-      <li class="item3">
-       
-      </li>
-      <p><a href="#">更多推荐 >></a></p>
-    </ul>
-      
-    </div>
-
-
-
-    	</div>
-    </div>
-	</div>
-
-
-	<div id="footer">
-    <ul>
-      <li>Copyright © 2016 C.M.W. All Rights Reserved.</li>
-      <li>卡门 版权所有</li>
-    </ul>
-  </div>
-
 
 <script src="scripts/content.js"></script>
+<script src="scripts/startMove.js"></script>
+
 </body>
 </html>
