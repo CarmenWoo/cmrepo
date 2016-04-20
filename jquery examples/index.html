@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My first jQuery</title>
+
+    <style type="text/css">
+       /* div{padding: 8px 0px; font-size: 12px; text-align: center;border: solid 1px #888;}*/
+        .iframe{border: solid 1px #888;font-size: 13px;}
+        .title{padding: 8px 0px;background-color: #eee;}
+        .content{padding: 8px 0px;font-size: 12px;text-align: center; display: none;}
+        .curcol{background-color: #ccc;}
+    </style>
+
+
+    <script src="jQ/jquery-1.6.2.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        // $(document).ready(function(){
+        //     $("div").html("Welcome to jQuery word!");
+        // })
+
+        $(function(){
+            $(".content").html("Welcome to jQuery word!");
+            $(".title").click(function(){
+                $(this).addClass("curcol")
+                .next(".content").css("display","block")   //链式写法         
+            });
+        });
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    <div class="iframe">
+        <div class="title">Title</div>
+        <div class="content"></div>
+    </div>
+
+</body>
+</html>
