@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取元素的属性</title>
+    <script src="jQ/jquery-1.6.2.min.js" type="text/javascript"></script>
+    <style type="text/css">
+        body{font-size: 12px;}
+        div{float: left;padding-left: 10px;}
+        img{border: solid 1px #ccc; padding: 3px;float: left;}
+    </style>
+
+    <script type="text/javascript">
+    //获取元素属性的语法格式： attr(name) ，参数 name 表示属性的名称。
+        $(function(){
+            var strAlt = $("img").attr("src");
+            strAlt += "<br/><br/>" + $("img").attr("title");
+            $("#divAlt").html(strAlt);
+        })
+
+    //attr(name,value) 的方式设置元素的属性。 
+
+
+    </script>
+</head>
+<body>
+    <img alt="" title="这是一只熊" src="images/panda.jpg" />
+    <div id="divAlt"></div>
+
+</body>
+</html>
+

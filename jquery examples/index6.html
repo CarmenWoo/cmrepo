@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设置元素的属性</title>
+    <script src="jQ/jquery-1.6.2.min.js" type="text/javascript"></script>
+    <style type="text/css">
+        body{font-size: 12px;}
+        .clsSpn{float: left;padding-top: 10px; padding-left: 10px;}
+        .clsImg{border: solid 1px #ccc; padding: 3px;float: left;}
+    </style>
+
+    <script type="text/javascript">
+    //attr(name,value) 的方式设置元素的属性。 
+           $(function() {            
+           $("img").attr("src", "images/panda.jpg"); //设置src属性            
+           $("img").attr("title", "这是一幅风景画");   //设置title属性            
+           $("img").attr({ src: "images/panda.jpg",                      
+                        title: "这是一只熊" }); //同时设置两个属性            
+            $("img").addClass("clsImg"); //增加样式
+            $("span").html("加载完毕");          
+        })
+    </script>
+</head>
+<body>
+    <img alt="" src="images/panda.jpg" style="float:left" />
+    <span class="clsSpn">正在加载图片...</span>
+
+</body>
+</html>
