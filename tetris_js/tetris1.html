@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tetris1</title>
+    <style type="text/css">
+        .activityModel { margin: 1px; width: 19px; height: 19px; background: red; position: absolute; }
+    </style>
+
+    <script type="text/javascript">
+        function actMod() {
+           var div = document.getElementsByClassName("activityModel")[0];
+            div.style.top =  0;
+            div.style.left = 0;
+
+            document.onkeydown = function(e){
+                var e = window.event? window.event :e;
+                switch(e.keyCode) {
+                    case 38:
+                        div.style.top = (parseInt(div.style.top)-20) + "px";
+                        break;
+                    case 40:
+                        div.style.top = (parseInt(div.style.top)+20) + "px";
+                        break;
+                    case 37:
+                        div.style.left = (parseInt(div.style.left)-20) + "px";
+                        break;
+                    case 39:
+                        div.style.left = (parseInt(div.style.left)+20) + "px";
+                        break;
+                }
+            }
+            
+        }
+    </script>
+</head>
+<body onload="actMod()">
+    <div class="activityModel"></div>
+</body>
+</html>                 
