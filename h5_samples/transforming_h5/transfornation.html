@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no"/>
+    <meta charset="utf-8">
+    <title>Transforming video</title>
+    <link rel="stylesheet" type="text/css" href="tf.css">
+</head>
+
+<body>
+    <div id="boundary">
+    <header>
+        <h1>Transforming HTML5 video with CSS3</h1>
+        <h2>If tested in jsbin,please try in standalone mode(click the small arrow on the top right of the output tab)</h2>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <strong>Viddeo player with zoom and roate</strong>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="stage">
+        <video>
+            <source src="http://www.archive.org/download/AnimatedMechanicalArtPiecesAtMit/P1120973_512kb.mp4" 
+              type="video/mp4">
+            <source src="http://www.archive.org/download/AnimatedMechanicalArtPiecesAtMit/P1120973.ogv" type="video/ogg">
+            <p>Your browser dosen't support the HTML5 video tag it seem.
+                You can see this video as part of a collection
+                <a href="http://www.archive.org/download/AnimatedMechanicalArtPiecesAtMit/">
+             at archive.org</a>.
+            </p>
+        </video>
+    </div>
+    <div id="controls"></div>
+    <footer>Written by <a href="http://wait-till-i.com">Chris Heilmann</a>, powered by HTML5 and <a href="http://archive.org">Archive.org</a></footer>
+    </div>
+
+    <script src="tf.js"></script>
+</body>
+</html>
+
